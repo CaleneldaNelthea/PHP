@@ -11,23 +11,31 @@ if (isset($_POST['number'])) {
     $number = $_POST['number'];
 }
 ?>
-<form action="Faculty.php" method="post">
+
+<form action="Testnumber.php" method="post">
     <div>
-        <label for="number">number:</label>
+        <label for="number">Number:</label>
         <input type="text" id="number" name="number" value="<?= $number ?>">
     </div>
     <div>
         <input type="submit" value="Test!">
     </div>
 </form>
-<?php
-$help =1;
-for ($i = 1; $i <= $number; $i = $i +1) {
-    $help = $help*$i;
-}
-print "Faculty " . $help
-
-?>
-
 </body>
+<?php
+if ($number < 0) {
+    if ($number % 2 == 0) {
+    $c =  $number . " is negative and even";
+    } else {
+        echo $number . " is negative en uneven";
+    }
+
+if ($number > 10) {
+echo $number . " is greater than 10";
+} else {
+    echo $number . " is between 0 and 10";
+
+    }
+}
+?>
 </html>
