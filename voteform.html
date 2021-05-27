@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <form action="processVote.php" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" />
+        </div>
+        <div>
+            <input type="radio" name="vote" value="Tim" />Tim<br/>
+            <input type="radio" name="vote" value="Sofie" />Sofie<br/>
+            <input type="radio" name="vote" value="Gerd" />Gerd
+        </div>
+        <div>
+            <input type="submit" value="Chose!" />
+        </div>
+    </form>
+
+</body>
+
+</html>
